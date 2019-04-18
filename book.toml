@@ -1,0 +1,4 @@
+[book]
+authors = ["clearloop"]
+multilingual = false
+src = "src/doc"

@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Be Fearless Using Rust in Production - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body class="light">
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme + ' js';
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="../index.html">Rustcon Aisa</a></li><li><a href="../day_1/making_rust_delightful.html"><strong aria-hidden="true">1.</strong> Making Rust Delightful</a></li><li><a href="../day_1/linux_from_scratch_in_rust.html"><strong aria-hidden="true">2.</strong> Linux From Scratch in Rust</a></li><li><a href="../day_1/rust_for_competitive_programming.html"><strong aria-hidden="true">3.</strong> Rust for competitive programming</a></li><li><a href="../day_1/implementing_a_secp256k1_library_in_pure_rust.html"><strong aria-hidden="true">4.</strong> Implementing a secp256k1 library in pure Rust</a></li><li><a href="../day_1/how_rust_taught_me_to_think_about_systems.html"><strong aria-hidden="true">5.</strong> How Rust taught me to think about systems</a></li><li><a href="../day_1/futures_in_tikv.html"><strong aria-hidden="true">6.</strong> Futures in TiKV</a></li><li><a href="../day_1/implementing_a_p2p_network_framework.html"><strong aria-hidden="true">7.</strong> Implementing a p2p network framework</a></li><li><a href="../day_1/stackful_coroutine_based_rust_async_story.html"><strong aria-hidden="true">8.</strong> Stackful coroutine based rust async story</a></li><li><a href="../day_1/improving_web_app_with_rust_and_wasm.html"><strong aria-hidden="true">9.</strong> Improving web app with Rust and WASM</a></li><li><a href="../day_1/cargo_meets_autotools.html"><strong aria-hidden="true">10.</strong> Cargo meets Autotools</a></li><li><a href="../day_1/re_zero_writing_a_custom_derive.html"><strong aria-hidden="true">11.</strong> Re:Zero - writing a custom derive</a></li><li><a href="../day_1/distributed_actor_system_in_rust.html"><strong aria-hidden="true">12.</strong> Distributed Actor System in Rust</a></li><li><a href="../day_2/be_fearless_using_rust_in_production.html" class="active"><strong aria-hidden="true">13.</strong> Be Fearless Using Rust in Production</a></li><li><a href="../day_2/rust_at_bilibili.html"><strong aria-hidden="true">14.</strong> Rust at Bilibili</a></li><li><a href="../day_2/how_to_learn_rust_efficiently.html"><strong aria-hidden="true">15.</strong> How to learn Rust efficiently</a></li><li><a href="../day_2/search_engine_in_production_with_rust.html"><strong aria-hidden="true">16.</strong> Search Engine in production with Rust</a></li><li><a href="../day_3/introduction_to_iot_using_blynk_rust_and_your_smartphone.html"><strong aria-hidden="true">17.</strong> Introduction to IoT using Blynk, Rust and your Smartphone</a></li><li><a href="../day_3/rust_at_cryptape.html"><strong aria-hidden="true">18.</strong> Rust at Cryptape</a></li><li><a href="../day_3/rustbridge.html"><strong aria-hidden="true">19.</strong> RustBridge</a></li><li><a href="../day_3/webassembly_with_wasm_bindgen.html"><strong aria-hidden="true">20.</strong> WebAssembly with wasm-bindgen</a></li><li><a href="../day_3/rapid_development_of_restful_microservices_using_actix_web_and_diesel.html"><strong aria-hidden="true">21.</strong> Rapid Development of RESTful microservices using actix-web and diesel</a></li><li><a href="../day_4/build_a_secure_and_trusted_framework_in_rust.html"><strong aria-hidden="true">22.</strong> Build a Secure and Trusted Framework in Rust</a></li><li><a href="../day_4/thinking_in_rust.html"><strong aria-hidden="true">23.</strong> Thinking In Rust</a></li><li><a href="../day_4/learning_rust_ffi.html"><strong aria-hidden="true">24.</strong> Learning Rust FFI</a></li><li><a href="../day_4/building_a_simple_resp_parser.html"><strong aria-hidden="true">25.</strong> Building a simple RESP parser</a></li><li><a href="../day_4/integrate_rust_prometheus_into_your_application.html"><strong aria-hidden="true">26.</strong> Integrate rust-prometheus into your application</a></li><li><a href="../day_4/building_a_blockchain_using_rust_with_parity_substrate.html"><strong aria-hidden="true">27.</strong> Building a blockchain using Rust with Parity Substrate</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title"></h1> 
+
+                        <div class="right-buttons">
+                            <a href="../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="#be-fearless-using-rust-in-production" id="be-fearless-using-rust-in-production"><h1>Be Fearless Using Rust in Production</h1></a>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../day_1/distributed_actor_system_in_rust.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../day_2/rust_at_bilibili.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../day_1/distributed_actor_system_in_rust.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../day_2/rust_at_bilibili.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
